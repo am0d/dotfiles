@@ -6,3 +6,12 @@ export PATH=$PATH:$HOME/bin
 
 ####
 # put any bash customizations in here
+
+PS1='[\u@\h \W$(__git_ps1 " \033[1;35m%s\033[0m")]\$ '
+
+export EDITOR=vim
+
+alias q='exit'
+alias c='clear'
+
+export PATH=~/workspace/rust/rust-git/x86_64-unknown-linux-gnu/stage2/bin:$PATH
