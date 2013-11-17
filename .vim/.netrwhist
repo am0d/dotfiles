@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/a_m0d/workspace/buildit/bit/compiler'
+let g:netrw_dirhist_2='/home/a_m0d/workspace/pl2006/src'
+let g:netrw_dirhist_3='/home/a_m0d/workspace/vdrift/vdrift-data/.svn/props'
+let g:netrw_dirhist_4='/home/a_m0d/.gvfs/cdda mount on sr0'
+let g:netrw_dirhist_5='/home/a_m0d/rpms/bitcoins/pyopencl-2011.1beta3/pyopencl.egg-info'
+let g:netrw_dirhist_6='/home/a_m0d/workspace/mandelbrot/build'
+let g:netrw_dirhist_7='/home/a_m0d/workspace/FallingBlocks'
