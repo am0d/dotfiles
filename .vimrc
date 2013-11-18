@@ -1,3 +1,4 @@
+execute pathogen#infect()
 "{{{Auto Commands
 
 " Automatically cd into the directory that the file is in
