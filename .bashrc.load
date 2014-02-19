@@ -15,4 +15,8 @@ export EDITOR=vim
 alias q='exit'
 alias c='clear'
 
-export PATH=~/workspace/rust/rust-git/x86_64-unknown-linux-gnu/stage2/bin:$PATH
+export PATH=~/workspace/rust/rust-git/x86_64-unknown-linux-gnu/stage2/bin:~/workspace/rust/rust-git/x86_64-unknown-linux-gnu/stage1/bin:$PATH
+
+function gp() {
+    grep -C 10 --color=always $1 | less -R
+}
