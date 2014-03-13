@@ -15,5 +15,10 @@
     lg = log -p
     who = shortlog -s --
 	merge = merge --no-ff
+	up = "!git remote update -p; git merge --ff-only @{u}"
 [push]
 	default = simple
+[diff]
+	tool = meld
+[merge]
+	tool = meld
