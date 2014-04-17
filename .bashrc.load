@@ -20,3 +20,7 @@ export PATH=~/workspace/rust/rust-git/x86_64-unknown-linux-gnu/stage2/bin:~/work
 function gp() {
     grep -C 10 --color=always $1 | less -R
 }
+
+function ggp() {
+    git log -p -S $1 | gp $1
+}

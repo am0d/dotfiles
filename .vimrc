@@ -1,14 +1,4 @@
 execute pathogen#infect()
-"{{{Auto Commands
-
-" Automatically cd into the directory that the file is in
-" autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
-
-" Remove any trailing whitespace that is in the file
-" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
-"}}}
-
 "{{{Misc Settings"{{{
 
 " Necesary  for lots of cool vim things
@@ -66,11 +56,6 @@ set ignorecase
 
 " And so is Artificial Intellegence!
 set smartcase
-
-" This is totally awesome - remap jj to escape in insert mode.  You'll never type jj anyway, so it's great!
-"inoremap jj <Esc>
-
-"nnoremap JJJJ <Nop>
 
 " Incremental searching is sexy
 set incsearch
@@ -231,6 +216,19 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_SingleClick = 1
 let Tlist_Inc_Winwidth = 0
+"}}}
+
+"{{{Auto Commands
+
+" Automatically cd into the directory that the file is in
+" autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+
+" Remove any trailing whitespace that is in the file
+" autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
+" Note, perl automatically sets foldmethod in the syntax file
+autocmd Syntax rust,c,cpp,xml,html,xhtml setlocal foldmethod=syntax
+autocmd Syntax rust,c,cpp,xml,html,xhtml,perl normal zR
 "}}}
 
 let g:rct_completion_use_fri = 1
