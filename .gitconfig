@@ -1,5 +1,5 @@
 [user]
-	name = a_m0d
+	name = Damien Schoof
 	email = damien.schoof@gmail.com
 
 [alias]
@@ -14,7 +14,6 @@
     df = diff
     lg = log -p
     who = shortlog -s --
-	merge = merge --no-ff
 	up = "!git remote update -p; git merge --ff-only @{u}"
 [push]
 	default = simple
